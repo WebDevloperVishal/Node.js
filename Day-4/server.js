@@ -40,7 +40,7 @@ const server = http.createServer((req, res) => {
     transform(chunk , encoding , callback){
       console.log("chunk" , chunk.toString())
           const uppercaseString = chunk.toString().toUpperCase();
-    const finalString = uppercaseString.replaceAll(/suraj/gi, "sigma");
+    const finalString = uppercaseString.replaceAll(/vishal/gi, "sigma");
 
     callback(null , finalString)
     }
@@ -50,7 +50,7 @@ const server = http.createServer((req, res) => {
   //   console.log("data received", chunk.toString());
 
   //   const uppercaseString = chunk.toString().toUpperCase();
-  //   const finalString = uppercaseString.replaceAll(/suraj/gi, "sigma");
+  //   const finalString = uppercaseString.replaceAll(/vishal/gi, "sigma");
 
   //   outputWritableStream.write(finalString);
   // });
